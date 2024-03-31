@@ -1,14 +1,14 @@
 {
   "link.title.Writing": {
-    "message": "Де я пишу",
+    "message": "Writing",
     "description": "The title of the footer links column with title=Writing in the footer"
   },
   "link.title.Socails": {
-    "message": "Соціальні мережі",
+    "message": "Socails",
     "description": "The title of the footer links column with title=Socails in the footer"
   },
   "link.title.More": {
-    "message": "Інше",
+    "message": "More",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Medium": {

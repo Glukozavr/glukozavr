@@ -2,36 +2,26 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+import Translate, {translate} from '@docusaurus/Translate';
+
+const imagesCredits = '<a href="https://www.freepik.com/free-vector/player-characters-online-game-concept_8131809.htm#fromView=search&page=2&position=2&uuid=33af6d3d-b1e1-4e8c-9350-519a6856dcab">Image by freepik</a>';
+const imagesCredits2 = '<a href="https://www.freepik.com/free-vector/folklore-music-isolated-icon-set-with-usa-norway-germany-ukraine-couples-vector-illustration_41922685.htm#fromView=search&page=2&position=36&uuid=e5f48089-2250-4869-95a7-af26d3f39e2f">Image by macrovector on Freepik</a>'
+
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: 'homepage.feature1.title',
+    Svg: require('@site/static/img/feature-engineer.svg').default,
+    description: 'homepage.feature1.text',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: 'homepage.feature2.title',
+    Svg: require('@site/static/img/feature-gaming.svg').default,
+    description: 'homepage.feature2.text',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: 'homepage.feature3.title',
+    Svg: require('@site/static/img/feature-ukraine.svg').default,
+    description: 'homepage.feature3.text',
   },
 ];
 
@@ -42,8 +32,8 @@ function Feature({Svg, title, description}) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        <Heading as="h3"><Translate id={title}></Translate></Heading>
+        <p><Translate id={description}></Translate></p>
       </div>
     </div>
   );
