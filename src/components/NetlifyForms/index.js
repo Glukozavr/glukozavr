@@ -12,7 +12,6 @@ function encode(data) {
   
 export default function NetlifyForms({formName, submitAction, nameLabel, emailLabel, messageLabel, sendLabel}) {
     const { i18n } = useDocusaurusContext();
-    console.log("CTX: ", i18n);
     const history = useHistory();
     const [state, setState] = React.useState({})
   
