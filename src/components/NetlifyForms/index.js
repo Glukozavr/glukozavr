@@ -2,6 +2,7 @@ import styles from './styles.module.css';
 import React from "react";
 import Translate from "@docusaurus/Translate";
 import { useHistory } from '@docusaurus/router';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 function encode(data) {
     return Object.keys(data)
@@ -10,6 +11,8 @@ function encode(data) {
 }
   
 export default function NetlifyForms({formName, submitAction, nameLabel, emailLabel, messageLabel, sendLabel}) {
+    const { i18n } = useDocusaurusContext();
+    console.log("CTX: ", i18n);
     const history = useHistory();
     const [state, setState] = React.useState({})
   
@@ -29,7 +32,8 @@ export default function NetlifyForms({formName, submitAction, nameLabel, emailLa
           }),
         })
           .then(() => {
-            history.push(form.getAttribute('action'));
+            const local_prefix = i18n.currentLocale === i18n.defaultLocale ? '' : `/${i18n.localeConfigs[i18n.currentLocale].htmlLang}`;
+            history.push(`${local_prefix}${form.getAttribute('action')}`);
         })
           .catch((error) => {
               alert(error);
