@@ -317,5 +317,21 @@
   "homepage.feature3.text": {
     "message": "Last but not least, my passion is Ukrainian culture and mythology. I read about it, I watch it, and I want to be a part of it. Sometimes I write about it, but constantly working on ideas how to promote it. ",
     "description": "Ukrainian feature description"
+  },
+  "forms.name": {
+    "message": "You Name: ",
+    "description": "Name request label for the form"
+  },
+  "forms.email": {
+    "message": "You Email: ",
+    "description": "Email request label for the form"
+  },
+  "forms.message": {
+    "message": "Message: ",
+    "description": "Message request label for the form"
+  },
+  "forms.send": {
+    "message": "Send",
+    "description": "Send button label for the form"
   }
 }
