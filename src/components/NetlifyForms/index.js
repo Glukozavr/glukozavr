@@ -1,6 +1,7 @@
 import styles from './styles.module.css';
 import React from "react";
 import Translate from "@docusaurus/Translate";
+import { useHistory } from '@docusaurus/router';
 
 function encode(data) {
     return Object.keys(data)
@@ -9,6 +10,7 @@ function encode(data) {
 }
   
 export default function NetlifyForms({formName, submitAction, nameLabel, emailLabel, messageLabel, sendLabel}) {
+    const history = useHistory();
     const [state, setState] = React.useState({})
   
     const handleChange = (e) => {
@@ -27,7 +29,7 @@ export default function NetlifyForms({formName, submitAction, nameLabel, emailLa
           }),
         })
           .then(() => {
-            window.location.href = form.action;
+            history.push(form.getAttribute('action'));
         })
           .catch((error) => {
               alert(error);
@@ -44,15 +46,9 @@ export default function NetlifyForms({formName, submitAction, nameLabel, emailLa
         >
             <input type="hidden" name="form-name" value={formName} />
             <div className="container">
-                <p>
-                    <label><Translate>{nameLabel}</Translate><input type="text" name="name" onChange={handleChange} /></label>
-                </p>
-                <p>
-                    <label><Translate>{emailLabel}</Translate><input type="email" name="email" onChange={handleChange} /></label>
-                </p>
-                <p>
-                    <label><Translate>{messageLabel}</Translate><textarea name="message" onChange={handleChange} ></textarea></label>
-                </p>
+                <label><Translate>{nameLabel}</Translate><input type="text" name="name" onChange={handleChange} /></label>
+                <label><Translate>{emailLabel}</Translate><input type="email" name="email" onChange={handleChange} /></label>
+                <label><Translate>{messageLabel}</Translate><textarea name="message" onChange={handleChange} ></textarea></label>
             </div>
             <div className={styles.button}>
                 <button className="button button--secondary button--lg" type="submit"><Translate>{sendLabel}</Translate></button>
