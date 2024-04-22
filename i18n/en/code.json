@@ -333,5 +333,13 @@
   "forms.send": {
     "message": "Send",
     "description": "Send button label for the form"
+  },
+  "thanks.title": {
+    "message": "Thank you!",
+    "description": "Simple thank you title"
+  },
+  "thanks.description": {
+    "message": "Your message is saved and will be processed!",
+    "description": "Generalised message about the received feedback"
   }
 }

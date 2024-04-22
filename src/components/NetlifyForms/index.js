@@ -1,13 +1,6 @@
+import styles from './styles.module.css';
 import React from "react";
 import Translate from "@docusaurus/Translate";
-import {useLocation} from '@docusaurus/router';
-
-function navigate(route) {
-    // React router provides the current component's route, even in SSR
-    const location = useLocation();
-    const destination = location.pathname + route;
-    window.location.href = destination;
-}
 
 function encode(data) {
     return Object.keys(data)
@@ -23,9 +16,22 @@ export default function NetlifyForms({formName, submitAction, nameLabel, emailLa
     }
   
     const handleSubmit = (e) => {
-      e.preventDefault()
-      const form = e.target
-    //   navigate(form.getAttribute('action'));
+        e.preventDefault()
+        const form = e.target
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': form.getAttribute('name'),
+            ...state,
+          }),
+        })
+          .then(() => {
+            window.location.href = form.action;
+        })
+          .catch((error) => {
+              alert(error);
+          })
     }
 
     return (
@@ -48,11 +54,7 @@ export default function NetlifyForms({formName, submitAction, nameLabel, emailLa
                     <label><Translate>{messageLabel}</Translate><textarea name="message" onChange={handleChange} ></textarea></label>
                 </p>
             </div>
-            <div style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-            }}>
+            <div className={styles.button}>
                 <button className="button button--secondary button--lg" type="submit"><Translate>{sendLabel}</Translate></button>
             </div>
         </form>

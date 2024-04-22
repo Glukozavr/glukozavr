@@ -317,5 +317,29 @@
   "homepage.feature3.text": {
     "message": "І наостанок, я прихильник української культури та міфологї. Я читаю про неї, дивлюсь про неї та хочу бути частиною її. Іноди я пишу про неї, та постійно пропрацьовую різні ідеї, як я можу її просувати.",
     "description": "Ukrainian feature description"
+  },
+  "forms.name": {
+    "message": "Ваше імʼя: ",
+    "description": "Name request label for the form"
+  },
+  "forms.email": {
+    "message": "Ваша пошта: ",
+    "description": "Email request label for the form"
+  },
+  "forms.message": {
+    "message": "Повідомлення: ",
+    "description": "Message request label for the form"
+  },
+  "forms.send": {
+    "message": "Відправити",
+    "description": "Send button label for the form"
+  },
+  "thanks.title": {
+    "message": "Дякую!",
+    "description": "Simple thank you title"
+  },
+  "thanks.description": {
+    "message": "Ваше повідомлення отримао і буде опрацьоване!",
+    "description": "Generalised message about the received feedback"
   }
 }
