@@ -335,11 +335,9 @@
     "description": "Send button label for the form"
   },
   "thanks.title": {
-    "message": "Thank you!",
-    "description": "Simple thank you title"
+    "message": "Thank you!"
   },
   "thanks.description": {
-    "message": "Your message is saved and will be processed!",
-    "description": "Generalised message about the received feedback"
+    "message": "Your message is saved and will be processed!"
   }
 }

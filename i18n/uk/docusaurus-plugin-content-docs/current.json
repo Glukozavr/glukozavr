@@ -1,6 +1,30 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Наступна",
     "description": "The label for version current"
+  },
+  "sidebar.aboutSidebar.category.career": {
+    "message": "Карʼєра",
+    "description": "The label for category career in sidebar tutorialSidebar"
+  },
+  "sidebar.aboutSidebar.category.AboutMe": {
+    "message": "Про мене",
+    "description": "The label for category career in sidebar tutorialSidebar"
+  },
+  "sidebar.aboutSidebar.category.hobby": {
+    "message": "Гоббі",
+    "description": "The label for category hobby in sidebar tutorialSidebar"
+  },
+  "sidebar.aboutSidebar.category.ukraine": {
+    "message": "Україна",
+    "description": "The label for category ukraine in sidebar tutorialSidebar"
+  },
+  "sidebar.aboutSidebar.category.Career": {
+    "message": "Карʼєра",
+    "description": "The label for category Career in sidebar aboutSidebar"
+  },
+  "sidebar.aboutSidebar.category.Projects": {
+    "message": "Проєкти",
+    "description": "The label for category Projects in sidebar aboutSidebar"
   }
 }

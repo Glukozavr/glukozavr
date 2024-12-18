@@ -39,20 +39,12 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        // docs: {
-        //   sidebarPath: './sidebars.js',
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+        docs: {
+          sidebarPath: './sidebars.js',
+        },
+        blog: {
+          showReadingTime: true,
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -72,12 +64,11 @@ const config = {
           src: 'img/favicon.ico',
         },
         items: [
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'tutorialSidebar',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
+          {
+            type: 'docSidebar',
+            sidebarId: 'aboutSidebar',
+            position: 'left',
+          },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -86,7 +77,7 @@ const config = {
           // },
           {
             type: 'localeDropdown',
-            position: 'left',
+            position: 'right',
           },
         ],
       },
@@ -96,6 +87,10 @@ const config = {
           {
             title: 'Writing',
             items: [
+              {
+                label: 'Not Public Opinion',
+                href: 'https://notpublicopinion.com/',
+              },
               {
                 label: 'Medium',
                 href: 'https://medium.com/@glukozavr',

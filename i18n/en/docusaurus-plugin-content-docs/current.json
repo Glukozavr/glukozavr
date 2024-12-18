@@ -2,5 +2,29 @@
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
+  },
+  "sidebar.aboutSidebar.category.career": {
+    "message": "Career",
+    "description": "The label for category career in sidebar tutorialSidebar"
+  },
+  "sidebar.aboutSidebar.category.AboutMe": {
+    "message": "About Me",
+    "description": "The label for category career in sidebar tutorialSidebar"
+  },
+  "sidebar.aboutSidebar.category.hobby": {
+    "message": "Hobbies",
+    "description": "The label for category hobby in sidebar tutorialSidebar"
+  },
+  "sidebar.aboutSidebar.category.ukraine": {
+    "message": "Ukraine",
+    "description": "The label for category ukraine in sidebar tutorialSidebar"
+  },
+  "sidebar.aboutSidebar.category.Career": {
+    "message": "Career",
+    "description": "The label for category Career in sidebar aboutSidebar"
+  },
+  "sidebar.aboutSidebar.category.Projects": {
+    "message": "Projects",
+    "description": "The label for category Projects in sidebar aboutSidebar"
   }
 }
