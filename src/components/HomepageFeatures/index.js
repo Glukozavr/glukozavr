@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { useHistory } from 'react-router-dom';
+
 
 import Translate, {translate} from '@docusaurus/Translate';
 
@@ -10,26 +12,36 @@ const imagesCredits2 = '<a href="https://www.freepik.com/free-vector/folklore-mu
 const FeatureList = [
   {
     title: 'homepage.feature1.title',
-    Svg: require('@site/static/img/feature-engineer.svg').default,
+    // Svg: require('@site/static/img/feature-engineer.svg').default,
+    Img: require('@site/static/img/stroked-photo.png').default,
     description: 'homepage.feature1.text',
+    onClick: (history) => history.push('/docs/'),
   },
   {
     title: 'homepage.feature2.title',
-    Svg: require('@site/static/img/feature-gaming.svg').default,
+    // Svg: require('@site/static/img/feature-gaming.svg').default, 
+    Img: require('@site/static/img/stroked-npo-logo.png').default,
     description: 'homepage.feature2.text',
+    onClick: (history) => window.open('https://notpublicopinion.com/', '_blank').focus(),
   },
   {
     title: 'homepage.feature3.title',
-    Svg: require('@site/static/img/feature-ukraine.svg').default,
+    // Svg: require('@site/static/img/feature-ukraine.svg').default,
+    Img: require('@site/static/img/come-back-alive.png').default,
+    onClick: (history) => window.open('https://savelife.in.ua/en/donate-en/#donate-army-card-once/', '_blank').focus(),
     description: 'homepage.feature3.text',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, Img, title, description, onClick}) {
+  const history = useHistory();
+
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {onClick ?
+          <a href="#" onClick={() => onClick(history)}><img src={Img} alt="Logo" /></a>
+          : <Svg className={styles.featureSvg} role="img" />}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3"><Translate id={title}></Translate></Heading>

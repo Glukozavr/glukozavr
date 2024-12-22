@@ -295,28 +295,28 @@
     "description": "Text under the site name on the main page"
   },
   "homepage.feature1.title": {
-    "message": "Розробник ПЗ",
-    "description": "Software Engineer"
+    "message": "Хто Я?",
+    "description": "About me title"
   },
   "homepage.feature1.text": {
-    "message": "В першу чергу я професійний розробник програмного забезпечення (ПЗ), спеціалізуюсь на ігровій та веб-розробці, кандидат технічних наук в сфері Інформаційних технологій. Також я іноді пишу про різне.",
-    "description": "Software Engineer feature description"
+    "message": "Ви можете клікнути моє фото, щоб дізнатися більше про мене – мою карʼєру, мої проєкти.",
+    "description": "About me description"
   },
   "homepage.feature2.title": {
-    "message": "Ґеймер",
-    "description": "Gamer"
+    "message": "Не Суспільна Думка",
+    "description": "Not Public Opinion title"
   },
   "homepage.feature2.text": {
-    "message": "По-друге, я ґеймер зі стажем. Обожнюю сюжетні відеоігри та особливу увагу приділяю іграми незалежних розробників - інді. Іноді пишу огляди, ділюсь своїм досвідом та своїми субʼєктивними думками в інтернеті.",
-    "description": "Gamer feature description"
+    "message": "Це мій блог, де я пишу ігри, технології та різне англійською. Можете підписатись на мою скромку розсилку!",
+    "description": "Not Public Opinion description"
   },
   "homepage.feature3.title": {
-    "message": "Українець",
-    "description": "Ukrainian"
+    "message": "Повернись Живим",
+    "description": "Come Back Alive title"
   },
   "homepage.feature3.text": {
-    "message": "І наостанок, я прихильник української культури та міфологї. Я читаю про неї, дивлюсь про неї та хочу бути частиною її. Іноди я пишу про неї, та постійно пропрацьовую різні ідеї, як я можу її просувати.",
-    "description": "Ukrainian feature description"
+    "message": "Але що є важливим сьогодні, так це ваша підтримка і допомога Україні – ви можете задонатити в надійний фонд ʼПовернись живимʼ",
+    "description": "Come Back Alive description"
   },
   "forms.name": {
     "message": "Ваше імʼя: ",

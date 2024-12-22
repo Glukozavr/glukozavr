@@ -295,28 +295,28 @@
     "description": "Text under the site name on the main page"
   },
   "homepage.feature1.title": {
-    "message": "Software Engineer",
-    "description": "Software Engineer"
+    "message": "Who am I?",
+    "description": "About me title"
   },
   "homepage.feature1.text": {
-    "message": "First of all I am a professional software developer from Ukraine, specialized in game and web development, with PhD in IT, doing solution architecture in Stockholm, Sweden. I also write from time to time about stuff.",
-    "description": "Software Engineer feature description"
+    "message": "You can click my photo to learn more about me, my career, and my projects.",
+    "description": "About me description"
   },
   "homepage.feature2.title": {
-    "message": "Gamer",
-    "description": "Gamer"
+    "message": "Not Public Opinion",
+    "description": "Not Public Opinion title"
   },
   "homepage.feature2.text": {
-    "message": "Secondly, I am a long-time gamer. I enjoy story-rich experiences and especially interested in indie game development scene. Sometimes write game reviews, sharing my experience and subjective opinions online.",
-    "description": "Gamer feature description"
+    "message": "You can read my blog about games, technology and other stuff. And subscribe to my newsletter!",
+    "description": "Not Public Opinion description"
   },
   "homepage.feature3.title": {
-    "message": "Ukrainian",
-    "description": "Ukrainian"
+    "message": "Come Back Alive",
+    "description": "Come Back Alive title"
   },
   "homepage.feature3.text": {
-    "message": "Last but not least, my passion is Ukrainian culture and mythology. I read about it, I watch it, and I want to be a part of it. Sometimes I write about it, but constantly working on ideas how to promote it. ",
-    "description": "Ukrainian feature description"
+    "message": "What is important today, is that you can support Ukraine and Ukrainians by donating to the Come Back Alive foundation.",
+    "description": "Come Back Alive description"
   },
   "forms.name": {
     "message": "You Name: ",
