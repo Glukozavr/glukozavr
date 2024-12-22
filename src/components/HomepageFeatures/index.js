@@ -1,9 +1,8 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import { useHistory } from 'react-router-dom';
-
-
+import { useHistory } from '@docusaurus/router';
+import Link from '@docusaurus/Link';
 import Translate, {translate} from '@docusaurus/Translate';
 
 const imagesCredits = '<a href="https://www.freepik.com/free-vector/player-characters-online-game-concept_8131809.htm#fromView=search&page=2&position=2&uuid=33af6d3d-b1e1-4e8c-9350-519a6856dcab">Image by freepik</a>';
@@ -15,33 +14,31 @@ const FeatureList = [
     // Svg: require('@site/static/img/feature-engineer.svg').default,
     Img: require('@site/static/img/stroked-photo.png').default,
     description: 'homepage.feature1.text',
-    onClick: (history) => history.push('/docs/'),
+    Url: '/docs/',
   },
   {
     title: 'homepage.feature2.title',
     // Svg: require('@site/static/img/feature-gaming.svg').default, 
     Img: require('@site/static/img/stroked-npo-logo.png').default,
     description: 'homepage.feature2.text',
-    onClick: (history) => window.open('https://notpublicopinion.com/', '_blank').focus(),
+    Url: 'https://notpublicopinion.com/',
   },
   {
     title: 'homepage.feature3.title',
     // Svg: require('@site/static/img/feature-ukraine.svg').default,
     Img: require('@site/static/img/come-back-alive.png').default,
-    onClick: (history) => window.open('https://savelife.in.ua/en/donate-en/#donate-army-card-once/', '_blank').focus(),
+    Url: 'https://savelife.in.ua/en/donate-en/#donate-army-card-once/',
     description: 'homepage.feature3.text',
   },
 ];
 
-function Feature({Svg, Img, title, description, onClick}) {
+function Feature({Svg, Img, title, description, Url}) {
   const history = useHistory();
 
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        {onClick ?
-          <a href="#" onClick={() => onClick(history)}><img src={Img} alt="Logo" /></a>
-          : <Svg className={styles.featureSvg} role="img" />}
+        <Link to={Url} ><img src={Img} alt="Logo" /></Link>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3"><Translate id={title}></Translate></Heading>
